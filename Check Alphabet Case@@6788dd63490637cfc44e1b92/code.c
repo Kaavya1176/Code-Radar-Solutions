@@ -5,7 +5,7 @@ int main(){
     if (input >= 'A' && input <= 'Z') {
         printf("Uppercase\n");
     }
-    if (input >= 'a' && input <= 'z') {
+    else if (input >= 'a' && input <= 'z') {
         printf("Lowercase\n");
     }
     else{
