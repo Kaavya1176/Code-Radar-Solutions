@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <ctype.h>  // For checking if the character is a digit
 
 int main() {
     char ch;
