@@ -9,7 +9,7 @@ int main() {
 
     // Check if the character is a digit
     if (ch >= '0' && ch <= '9') {
-        printf("Digit.\n", ch);
+        printf("Digit\n", ch);
     }
     // Check if the character is a vowel
     else if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
