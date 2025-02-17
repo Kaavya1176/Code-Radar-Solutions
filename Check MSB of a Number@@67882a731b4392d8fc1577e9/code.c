@@ -5,8 +5,10 @@ int main() {
     scanf("%d", &num);
 
     int msb = (num >> 31) & 1;  // Extract MSB for 32-bit integer
-
-    printf("%d", msb);
-
-    return 0;
+if(msb==1){
+    printf("Set");
+}
+else{
+    printf("Not Set");
+}
 }
