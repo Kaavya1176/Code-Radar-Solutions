@@ -1,3 +1,4 @@
+#include<stdio.h>
 int main(){
     int a,i=2,prime=0;
     scanf("%d",&a);
