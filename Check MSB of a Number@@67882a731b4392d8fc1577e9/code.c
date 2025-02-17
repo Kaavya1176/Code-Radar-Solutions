@@ -2,12 +2,11 @@
 
 int main() {
     int num;
-    printf("Enter a number: ");
     scanf("%d", &num);
 
     int msb = (num >> 31) & 1;  // Extract MSB for 32-bit integer
 
-    printf("MSB is %d\n", msb);
+    printf("%d", msb);
 
     return 0;
 }
