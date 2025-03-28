@@ -4,10 +4,10 @@ int main(){
     char alphabet='A';
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
+        alphabet='A';
         for(int j=0;j<i;j++){
-            alphabet=alphabet+j;
-            printf("%c ",alphabet-1);
-            alphabet='A';
+            printf("%c ",alphabet);
+            alphabet++;
         }
     printf("\n");
     }
