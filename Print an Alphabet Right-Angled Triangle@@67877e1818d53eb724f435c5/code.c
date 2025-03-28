@@ -5,8 +5,9 @@ int main(){
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
         for(int j=0;j<i;j++){
-            printf("%c ",alphabet);
-            alphabet++;
+            alphabet=alphabet+j;
+            printf("%c ",alphabet-1);
+            alphabet='A';
         }
     printf("\n");
     }
