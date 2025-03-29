@@ -7,18 +7,18 @@ int main() {
     for(i=0;i<n;i++){
         scanf("%d",&array[i]);
     }
-    int maximum=array[0];
-    int minimum=array[0];
+    int max=array[0];
+    int min=array[0];
     for(i=0;i<n;i++){
-        if(array[i]>maximum){
-            maximum=array[i];
+        if(array[i]>max){
+            max=array[i];
         }
-        if(array[i]<minimum){
-            minimum=array[i];
+        if(array[i]<min){
+            min=array[i];
         }
     }
-    printf("%d ",minimum);
-    printf("%d",maximum);
+    printf("%d ",min);
+    printf("%d",max);
     
     
 }
