@@ -15,5 +15,6 @@ int main(){
         else{
             counto=counto+1;
         }
+    printf("%d %d",counte,counto)
     }
 }
