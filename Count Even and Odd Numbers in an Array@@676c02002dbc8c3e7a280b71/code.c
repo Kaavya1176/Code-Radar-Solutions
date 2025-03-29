@@ -13,7 +13,7 @@ int main(){
             counte=counte+1;
         }
         else{
-            counto=count0+1;
+            counto=counto+1;
         }
     }
 }
