@@ -12,12 +12,12 @@ int main(){
             output=1;
             break;
         }
-        else{
-        printf("%d",output);
-    }
+        
     }
     if(output=1){
         printf("%d",arr[i]);
     }
-   
+    else{
+        printf("%d",output);
+    }
 }
