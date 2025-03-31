@@ -14,10 +14,11 @@ int main(){
         }
         
     }
-    if(output=1){
-        printf("%d",arr[i]);
+    if(output==-1){
+      
+        printf("-1");
     }
     else{
-        printf("%d",output);
+         printf("%d",arr[i]);
     }
 }
