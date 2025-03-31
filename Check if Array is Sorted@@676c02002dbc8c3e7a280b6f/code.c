@@ -3,11 +3,11 @@ int main(){
     int n;
     int arr[n];
     scanf("%d",&n);
-    int sort=0;
+    int sort=1;
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
         if(arr[i]>arr[i+1]){
-           sort=1;
+           sort=0;
            break;
         }
         }
