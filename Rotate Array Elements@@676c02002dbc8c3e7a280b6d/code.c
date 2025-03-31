@@ -13,7 +13,7 @@ int main(){
             arr[i+1]=arr[i];
         }
         arr[0]=temp;
-        k--;
+    
     }
     printf("%d",arr);
 }
