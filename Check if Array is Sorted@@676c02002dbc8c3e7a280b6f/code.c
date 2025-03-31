@@ -3,13 +3,17 @@ int main(){
     int n;
     int arr[n];
     scanf("%d",&n);
+    int sort=0;
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
         if(arr[i]>arr[i+1]){
-            printf("Sorted");
+           sort=1;
         }
-        else{
-            printf("Not Sorted");
         }
-    }
+if(sort==1){
+    printf("Sorted");
 }
+else{
+    printf("Not  Sorted");
+}
+    }
