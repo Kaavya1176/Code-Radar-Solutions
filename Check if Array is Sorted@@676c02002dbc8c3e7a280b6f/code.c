@@ -8,6 +8,7 @@ int main(){
         scanf("%d",&arr[i]);
         if(arr[i]>arr[i+1]){
            sort=1;
+           break;
         }
         }
 if(sort==1){
