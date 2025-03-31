@@ -6,17 +6,18 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-      int output=-1;
+    int output=-1;
     for(i=0;i<n-1;i++){
         if((arr[i]>arr[i-1])&&(arr[i]>arr[i+1])){
             output=1;
             break;
         }
+        else{
+        printf("%d",output);
+    }
     }
     if(output=1){
         printf("%d",arr[i]);
     }
-    else{
-        printf("%d",output);
-    }
+   
 }
