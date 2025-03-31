@@ -19,6 +19,6 @@ int main(){
        
     }
     else{
-         printf("%d",arr[i])
+         printf("%d",arr[i]);
     }
 }
