@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main(){
-    int n;
-    scanf("%d", &n);
-    int arr[n];
-    for(int i=0;i<n-1;i++){
+    int arr[],n,k;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int n2;
-    scanf("%d",&n2);
-    printf("%d",arr[n-n2]);
-    for(int i=n-n2;i<n;i++){
-        printf("%d",&arr[i]);
+    scanf("%d",&k);
+    for(int i=0;i<k;i++){
+        int temp=arr[n-1];
+        for(int i=n-2;i>=0;i--){
+            arr[i+1]=arr[i];
+        }
+        arr[0]=temp;
+        k--;
     }
-    for(int i=0;i<n-n2;i++){
-        printf("%d\n",&arr[i]);
-    }
+    printf("%d",arr);
 }
