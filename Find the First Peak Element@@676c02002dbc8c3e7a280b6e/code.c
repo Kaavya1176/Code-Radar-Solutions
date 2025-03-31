@@ -14,9 +14,10 @@ int main(){
         }
         
     }
-    return -1;
     if(output=1){
         printf("%d",arr[i]);
     }
-    
+    else{
+        printf("%d",output);
+    }
 }
