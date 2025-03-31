@@ -18,6 +18,6 @@ int main(){
         printf("%d",arr[i]);
     }
     else{
-        printf("%d",output);
+        printf("-1");
     }
 }
