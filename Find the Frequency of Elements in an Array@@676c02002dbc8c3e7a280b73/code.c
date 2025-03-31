@@ -13,6 +13,6 @@ int main(){
             count++;
         }
     }}
-    int i;
+    int i,count;
     printf("%d %d",arr[i],count);
 }
