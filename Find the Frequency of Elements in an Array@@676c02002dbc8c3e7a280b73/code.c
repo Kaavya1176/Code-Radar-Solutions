@@ -1,18 +1,34 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+    scanf("%d", &n);  // Read the number of elements
+
+    int arr[n], freq[n]; // freq[] to keep track of frequencies
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);  // Read array elements
+        freq[i] = -1; // Initialize frequency array
     }
-    for(int i=0;i<n-1;i++){
-       int count=0;
-        for(int j=i+1;j<n-1;j++){
-        if(arr[i]==arr[i+1]){
-            count++;
+
+    for(int i = 0; i < n; i++) {
+        if(freq[i] == -1) {
+            int count = 1;
+            for(int j = i + 1; j < n; j++) {
+                if(arr[i] == arr[j]) {
+                    count++;
+                    freq[j] = 0; // Mark as counted
+                }
+            }
+            freq[i] = count; // Store frequency
         }
-    }}
-    int i,count;
-    printf("%d %d",arr[i],count);
+    }
+
+    // Output unique elements with their frequencies
+    for(int i = 0; i < n; i++) {
+        if(freq[i] != 0) {
+            printf("%d %d\n", arr[i], freq[i]);
+        }
+    }
+
+    return 0;
 }
