@@ -14,7 +14,7 @@ int main(){
         }
         
     }
-    if(output==1){
+    if(output=1){
         printf("%d",arr[i]);
     }
     else{
