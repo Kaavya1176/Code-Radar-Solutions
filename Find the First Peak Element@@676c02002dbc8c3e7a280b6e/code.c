@@ -8,7 +8,7 @@ int main(){
     }
     int output=-1;
     for(i=0;i<n-1;i++){
-        if((arr[i]>arr[i-1])&&(arr[i]>arr[i+1])){
+        if((arr[i]>=arr[i-1])&&(arr[i]>=arr[i+1])){
             output=1;
             break;
         }
