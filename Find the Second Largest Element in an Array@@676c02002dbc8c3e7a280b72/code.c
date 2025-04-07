@@ -16,10 +16,9 @@ int main(){
     int ans;
     for(int i=0;i<n;i++){
         if((arr[i]<second)&&(second<largest)){
-            second=arr[i];
             ans==0;
-            
         }
+        second=arr[i];
         else{
         	ans==1;
 		}
