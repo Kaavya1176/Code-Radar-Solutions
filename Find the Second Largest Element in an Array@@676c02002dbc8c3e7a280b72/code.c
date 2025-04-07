@@ -17,8 +17,6 @@ int main(){
         if(arr[i]<second<largest){
             printf("%d",second);
         }
-        else{
-            return -1;
-        }
+      
     }
 }
