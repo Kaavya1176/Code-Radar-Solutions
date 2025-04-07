@@ -18,10 +18,10 @@ int main(){
         if((arr[i]<second)&&(second<largest)){
             ans==0;
         }
-        second=arr[i];
         else{
         	ans==1;
 		}
+        second=arr[i];
       
     }
 if(ans==0){
