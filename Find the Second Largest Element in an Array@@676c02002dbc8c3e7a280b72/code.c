@@ -13,11 +13,19 @@ int main(){
         }
     }
     int second=arr[0];
+    int ans;
     for(int i=0;i<n;i++){
         if((arr[i]<second)&&(second<largest)){
             second=arr[i];
-            printf("%d",second);
+            ans==0;
+            
         }
+        else{
+        	ans==1;
+		}
       
     }
+if(ans==0){
+	printf("%d",second);
+}
 }
