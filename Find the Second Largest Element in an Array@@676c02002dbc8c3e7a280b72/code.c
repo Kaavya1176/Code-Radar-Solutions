@@ -18,10 +18,16 @@ int main(){
         if((arr[i]>second)&&(second<largest)){
             ans==0;
         }
+        else{
+        	ans==1;
+		}
         second=arr[i];
       
     }
 if(ans==0){
 	printf("%d",second);
+}
+if(ans==1){
+    printf("-1");
 }
 }
