@@ -18,9 +18,6 @@ int main(){
         if((arr[i]>second)&&(second<largest)){
             ans==0;
         }
-        else{
-        	ans==1;
-		}
         second=arr[i];
       
     }
