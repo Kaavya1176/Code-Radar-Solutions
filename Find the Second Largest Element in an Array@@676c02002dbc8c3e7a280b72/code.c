@@ -6,28 +6,28 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int largest=arr[0];
-    for(int i=0;i<n;i++){
-        if(arr[i]>arr[0]){
-            largest=arr[i];
+
+    int largest = arr[0];
+    for(int i=0; i<n; i++){
+        if(arr[i] > largest){
+            largest = arr[i];
         }
     }
-    int second=arr[0];
-    int ans;
-    for(int i=0;i<n;i++){
-        if((arr[i]>second)&&(second<largest)){
-            ans=0;
+
+    int second = -1;
+    for(int i=0; i<n; i++){
+        if(arr[i] != largest){
+            if(second == -1 || arr[i] > second){
+                second = arr[i];
+            }
         }
-        else{
-        	ans=1;
-		}
-        second=arr[i];
-      
     }
-if(ans==0){
-	printf("%d",second);
-}
-if(ans==1){
-    printf("-1");
-}
+
+    if(second != -1){
+        printf("%d", second);
+    } else {
+        printf("-1");
+    }
+
+    return 0;
 }
