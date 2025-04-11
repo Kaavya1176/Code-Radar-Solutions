@@ -14,16 +14,16 @@ int main(){
         }
     }
 
-    int second = -2;
+    int second = 1;
     for(int i=0; i<n; i++){
         if(arr[i] != largest){
-            if(second == -2 || arr[i] > second){
+            if(second == 1 || arr[i] > second){
                 second = arr[i];
             }
         }
     }
 
-    if(second != -2){
+    if(second != 1){
         printf("%d", second);
     } else {
         printf("-1");
